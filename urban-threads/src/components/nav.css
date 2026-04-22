@@ -1,0 +1,64 @@
+/* NAVBAR BASE */
+.navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+    color: white;
+    z-index: 1000;
+  }
+  
+  /* CONTENEDOR */
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+  }
+  
+  /* LOGO */
+  .logo {
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+  
+  /* LINKS */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+  
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    transition: 0.3s;
+  }
+  
+  /* EFECTO UNDERLINE */
+  .nav-links li a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #f59e0b;
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-50%);
+    transition: 0.3s;
+  }
+  
+  .nav-links li a:hover::after {
+    width: 100%;
+  }
+  
+  /* BOTON MOBILE */
+  .menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
