@@ -1,9 +1,13 @@
 import { useState } from "react"
 import "./nav.css"
+import { Link } from "react-router-dom";
+
 
 
 
 const Nav = () => {
+
+   
     
     const [menuOpen, setMenuOpen] = useState(false);
 
@@ -17,9 +21,9 @@ return (
 
             
             <ul class="nav-links" id="navLinks">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Productos</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><Link to="/">Inicio</Link></li>
+                <li><Link to="/productos">Productos</Link></li>
+                <li><Link to="/contacto">Contacto</Link></li>
             </ul>
 
             

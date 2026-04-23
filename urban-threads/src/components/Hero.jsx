@@ -1,6 +1,10 @@
 import "./hero.css"
+import { Link } from "react-router-dom";
+
 
 const Hero =() => {
+
+   
 
     return(
         <section class="hero">
@@ -14,8 +18,9 @@ const Hero =() => {
                 </p>
 
                 <div class="hero-buttons">
-                    <a href="#" class="btn btn-primary">Ver productos</a>
-                    <a href="#" class="btn btn-secondary">Contáctanos</a>
+                   
+                    <Link to="/productos" class="btn btn-primary">EXPLORA LA COLECCION</Link>
+                                        
                 </div>
                 </div>
             </div>

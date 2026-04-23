@@ -7,8 +7,7 @@ body {
   /* HERO */
   .hero {
     height: 100vh;
-    background: url("https://images.unsplash.com/photo-1521335629791-ce4aec67dd53")
-      center/cover no-repeat;
+    background: black;
     position: relative;
   }
   
