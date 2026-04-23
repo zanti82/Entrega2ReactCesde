@@ -5,27 +5,27 @@ const ProductsPage = () => {
   const products = [
     {
       id: 1,
-      title: "Hoodie Urbana",
+      title: "Baggy Urbana",
       price: "120.000",
-      image: "https://via.placeholder.com/300"
+      image: "/1001.jpg"
     },
     {
       id: 2,
-      title: "Camiseta Street",
+      title: "Cargo Street",
       price: "80.000",
-      image: "https://via.placeholder.com/300"
+      image: "/4405.jpg"
     },
     {
       id: 3,
-      title: "Gorra Classic",
-      price: "45.000",
-      image: "https://via.placeholder.com/300"
+      title: "Cargo Classic",
+      price: "95.000",
+      image: "/4405k.jpg"
     },
     {
       id: 4,
-      title: "Pantalón Cargo",
+      title: "Baggy Cargo",
       price: "150.000",
-      image: "https://via.placeholder.com/300"
+      image: "/1004.jpg"
     }
   ];
 

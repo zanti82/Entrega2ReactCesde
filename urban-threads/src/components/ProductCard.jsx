@@ -1,4 +1,4 @@
-
+import "../styles/productsCard.css"
 
 const ProductCard = ({ image, title, price }) => {
     return (
