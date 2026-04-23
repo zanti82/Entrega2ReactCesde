@@ -1,6 +1,6 @@
 import Nav from "../components/Nav"
 import Hero from "../components/Hero"
-import Products from "../components/Products"
+import Info from "../components/Info"
 import Footer from "../components/Footer"
 
 
@@ -10,7 +10,7 @@ const Inicio = () => {
         <div>
             <Nav/>
             <Hero/>
-            <Products/>
+            <Info/>
             <Footer/>
         </div>
         

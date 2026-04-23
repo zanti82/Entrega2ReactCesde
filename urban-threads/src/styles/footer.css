@@ -4,9 +4,28 @@
     padding: 40px 20px;
     text-align: center;
   }
+
+  .footer-content{
+    display: flex;
+    gap:20px;
+  }
+
+  .footer-info {
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+  }
   
   .footer-links {
     margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+    width: 20%;
+    list-style: none;
   }
   
   .footer-links a {

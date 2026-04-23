@@ -1,33 +1,39 @@
-import { useState } from "react"
-import "./nav.css"
+import "../styles/nav.css"
 import { Link } from "react-router-dom";
-
-
-
+import { getLocalSotarge, removeLocalStorage } from "../helpers/local-storage";
 
 const Nav = () => {
 
-   
-    
-    const [menuOpen, setMenuOpen] = useState(false);
+   const nombreMensaje = getLocalSotarge("mensaje")
 
+ 
 return (
-    <nav class="navbar">
-        <div class="container">
+    <nav className="navbar">
+        <div className="container">
             
-            <div class="logo">
+            <div className="logo">
             URBAN THREADS
             </div>
 
+            {nombreMensaje ? <span>{nombreMensaje.nombre}</span> : <span>invitado</span>}
             
-            <ul class="nav-links" id="navLinks">
+            
+            <button onClick={() => {
+                removeLocalStorage("mensaje");
+                window.location.reload();
+                }}>
+                Cerrar sesión
+            </button>
+
+            
+            <ul className="nav-links" id="navLinks">
                 <li><Link to="/">Inicio</Link></li>
                 <li><Link to="/productos">Productos</Link></li>
                 <li><Link to="/contacto">Contacto</Link></li>
             </ul>
 
             
-            <div class="menu-toggle" id="menuToggle">
+            <div className="menu-toggle" id="menuToggle">
             ☰
             </div>
 

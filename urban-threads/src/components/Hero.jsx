@@ -1,4 +1,4 @@
-import "./hero.css"
+import "../styles/hero.css"
 import { Link } from "react-router-dom";
 
 
@@ -7,19 +7,19 @@ const Hero =() => {
    
 
     return(
-        <section class="hero">
-            <div class="hero-overlay">
-                <div class="hero-content">
-                <h1 class="hero-title">
+        <section className="hero">
+            <div className="hero-overlay">
+                <div className="hero-content">
+                <h1 className="hero-title">
                     URBAN THREADS
                 </h1>
-                <p class="hero-subtitle">
+                <p className="hero-subtitle">
                     Estilo urbano, actitud auténtica
                 </p>
 
-                <div class="hero-buttons">
+                <div className="hero-buttons">
                    
-                    <Link to="/productos" class="btn btn-primary">EXPLORA LA COLECCION</Link>
+                    <Link to="/productos" className="btn btn-primary">EXPLORA LA COLECCION</Link>
                                         
                 </div>
                 </div>
